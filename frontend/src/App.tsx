@@ -1,5 +1,6 @@
-import { BrowserRouter, Route,Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route,Routes } from "react-router-dom";
 import Layout from "./layouts/Layout";
+import Register from "./pages/Register";
 
 
 export default function App() {
@@ -12,6 +13,8 @@ export default function App() {
         <Route path="/search" element={<Layout>
           <p>Search</p>
         </Layout>} />
+        <Route path='/register' element={<Layout><Register /></Layout>} />
+        <Route path="*" element={<Navigate to="/" />} /> 
       </Routes>
     </BrowserRouter>
   );
