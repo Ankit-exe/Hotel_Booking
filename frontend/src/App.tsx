@@ -4,6 +4,7 @@ import Register from "./pages/Register";
 import SignIn from "./pages/SignIn";
 import { AddHotel } from "./pages/AddHotel";
 import { useAppContext } from "./context/AppContext";
+import MYHotels from "./pages/MYHotels";
 
 export default function App() {
 
@@ -53,7 +54,16 @@ export default function App() {
                 </Layout>
               }
             />
+            <Route
+              path="/my-hotels"
+              element={
+                <Layout>
+                  <MYHotels />
+                </Layout>
+              }
+            />
           </>
+          
         )}
 
         <Route path="*" element={<Navigate to="/" />} />

@@ -80,7 +80,7 @@ export const addMyHotel = async (hotelFormData:FormData) => {
   return response.json();
 }
 
-export const fetchMyHotel = async():Promise<HotelType> => {
+export const fetchMyHotels = async():Promise<HotelType[]> => {
   const response = await fetch(`${API_BASE_URL}/api/my-hotel`,{
     credentials:"include",
   });
