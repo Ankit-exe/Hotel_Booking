@@ -6,6 +6,7 @@ import { AddHotel } from "./pages/AddHotel";
 import { useAppContext } from "./context/AppContext";
 import MYHotels from "./pages/MYHotels";
 import { EditHotel } from "./pages/EditHotel";
+import { Search } from "./pages/Search";
 
 export default function App() {
 
@@ -25,7 +26,7 @@ export default function App() {
           path="/search"
           element={
             <Layout>
-              <p>Search</p>
+              <Search />
             </Layout>
           }
         />
