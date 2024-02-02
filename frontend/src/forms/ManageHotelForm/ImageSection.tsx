@@ -30,7 +30,7 @@ export const ImageSection = () => {
             {existingImageUrls.map((url) => (
               <div className="relative group">
                 <img src={url} className="min-h-full object-cover" />
-                <button className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white"
+                <button className="min-w-full absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 text-white"
                 onClick={(event) => handleDelete(event,url)}
                 >
                   Delete
